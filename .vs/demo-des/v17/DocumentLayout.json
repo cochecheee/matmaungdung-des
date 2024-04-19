@@ -1,0 +1,38 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mat ma ung dung\\demo-des\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13C08B1B-C49D-42EA-AC9E-C6BB734CBBD5}|demo-des\\demo-des.csproj|D:\\Mat ma ung dung\\demo-des\\demo-des\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13C08B1B-C49D-42EA-AC9E-C6BB734CBBD5}|demo-des\\demo-des.csproj|solutionrelative:demo-des\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Mat ma ung dung\\demo-des\\demo-des\\Form1.cs",
+              "RelativeDocumentMoniker": "demo-des\\Form1.cs",
+              "ToolTip": "D:\\Mat ma ung dung\\demo-des\\demo-des\\Form1.cs",
+              "RelativeToolTip": "demo-des\\Form1.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwDgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:44:18.751Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
