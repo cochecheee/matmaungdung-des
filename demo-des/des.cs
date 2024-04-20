@@ -404,21 +404,23 @@ namespace demo_des
         }
         //ma hóa chuỗi dài hơn 8 kí tự
         bool[] marked; //màng lưu vi6 trí dấu cách
+        int n;
         public string mahoachuoi(string s, ulong K1, ulong K2)
         {
 
             string hexa = "";
-            marked = new bool[s.Length]; //mang luu vị trí khoảng các
-            for (int i = 0; i < s.Length; i++)
+            this.n = s.Length;
+            this.marked = new bool[n]; //mang luu vị trí khoảng các
+            for (int i = 0; i < n; i++)
             {
                 if (s[i] == ' ')
                 {
-                    marked[i] = true;
+                    this.marked[i] = true;
                 }
             }
             //chuỗi mới để mã hóa
             string newStr = "";
-            for (int i = 0; i < s.Length; i++)
+            for (int i = 0; i < n; i++)
             {
                 if (s[i] != ' ') newStr += s[i];
             }
@@ -464,7 +466,7 @@ namespace demo_des
                 temp += s;
             }
             int index = 0;
-            for (int i = 0; i < marked.Length; i++)
+            for (int i = 0; i < n; i++)
             {
                 if (marked[i] == false)
                 {

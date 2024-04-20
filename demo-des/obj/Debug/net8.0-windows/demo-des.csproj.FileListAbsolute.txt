@@ -14,3 +14,4 @@ D:\Mat ma ung dung\demo-des\demo-des\obj\Debug\net8.0-windows\refint\demo-des.dl
 D:\Mat ma ung dung\demo-des\demo-des\obj\Debug\net8.0-windows\demo-des.pdb
 D:\Mat ma ung dung\demo-des\demo-des\obj\Debug\net8.0-windows\demo-des.genruntimeconfig.cache
 D:\Mat ma ung dung\demo-des\demo-des\obj\Debug\net8.0-windows\ref\demo-des.dll
+D:\Mat ma ung dung\demo-des\demo-des\obj\Debug\net8.0-windows\demo-des.sourcelink.json

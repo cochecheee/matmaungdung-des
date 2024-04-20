@@ -8,18 +8,22 @@ namespace demo_des
         public Form1()
         {
             InitializeComponent();
-            DES = new des();
+            
         }
 
         #region event
         private void btn_des_mahoa_Click(object sender, EventArgs e)
         {
+            DES = new des();
             try
             {
                 //check dữ liệu đầu vào 
                 string text = txt_des_text.Text;
                 string key = txt_des_key.Text;
-                if (string.IsNullOrWhiteSpace(txt_des_key.Text) && string.IsNullOrWhiteSpace(txt_des_text.Text))
+                string plain = txt_des_result.Text;
+
+                txt_des_result.Clear();
+                if (string.IsNullOrWhiteSpace(txt_des_key.Text) || string.IsNullOrWhiteSpace(txt_des_text.Text) || key.Length != 8)
                 {
                     MessageBox.Show("Điền chuỗi hợp lệ vô ok..");
                     return;
@@ -46,7 +50,8 @@ namespace demo_des
             {
                 string text = txt_des_text.Text;
                 string key = txt_des_key.Text;
-                if (string.IsNullOrWhiteSpace(txt_des_key.Text) && string.IsNullOrWhiteSpace(txt_des_text.Text))
+                txt_des_result.Clear();
+                if (string.IsNullOrWhiteSpace(txt_des_key.Text) || string.IsNullOrWhiteSpace(txt_des_text.Text) || key.Length != 8)
                 {
                     MessageBox.Show("Điền chuỗi hợp lệ vô ok..");
                     return;
@@ -69,22 +74,6 @@ namespace demo_des
         }
         #endregion event
 
-        #region method
-        //kiểm soát input vào là 64bit
-        public bool checkInput(string text, string key)
-        {
-            //cả hai phải khác rỗng
-            if (string.IsNullOrWhiteSpace(text) && string.IsNullOrWhiteSpace(key))
-            {
-                return false;
-            }
-            //kiểm tra đủ 64bit
-            if (text.Length != 8 && key.Length != 8)
-            {
-                return false;
-            }
-            return true;
-        }
-        #endregion method
+       
     }
 } 
