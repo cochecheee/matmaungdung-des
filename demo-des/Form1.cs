@@ -113,7 +113,7 @@ namespace demo_des
                 string key1 = txt_3des_key1.Text;
                 string key2 = txt_3des_key2.Text;
                 string key3 = txt_3des_key3.Text;
-                string res = _3des.Mahoa3DES(cipher, key1, key2, key3);
+                string res = _3des.Giaima3DES(cipher, key1, key2, key3);
 
                 txt_des_result.Text = res;
             }
