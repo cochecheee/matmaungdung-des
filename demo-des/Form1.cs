@@ -8,7 +8,7 @@ namespace demo_des
         public Form1()
         {
             InitializeComponent();
-            
+
         }
 
         #region event
@@ -67,13 +67,58 @@ namespace demo_des
                     txt_des_result.Text = res;
                 }
             }
-            catch (Exception ex ) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+
         #endregion event
 
-       
+
+
+
+        private void btn_3des_mahoa_Click(object sender, EventArgs e)
+        {
+            //check input dau vao
+            if (string.IsNullOrEmpty(txt_3des_text.Text) || string.IsNullOrEmpty(txt_3des_key1.Text) ||
+                string.IsNullOrEmpty(txt_3des_key2.Text) || string.IsNullOrEmpty(txt_3des_key3.Text))
+            {
+                MessageBox.Show("Nhập đầy đủ các thông tin để mã hóa...");
+                return;
+            }
+            else
+            {
+                string plain = txt_des_text.Text;
+                string key1 = txt_3des_key1.Text;
+                string key2 = txt_3des_key2.Text;
+                string key3 = txt_3des_key3.Text;
+                string res = _3des.Mahoa3DES(plain, key1, key2, key3);
+
+                txt_des_result.Text = res;
+            }
+        }
+
+        private void btn_3des_giaima_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_3des_text.Text) || string.IsNullOrEmpty(txt_3des_key1.Text) ||
+                string.IsNullOrEmpty(txt_3des_key2.Text) || string.IsNullOrEmpty(txt_3des_key3.Text))
+            {
+                MessageBox.Show("Nhập đầy đủ các thông tin để mã hóa...");
+                return;
+            }
+            else
+            {
+                string cipher = txt_des_text.Text;
+                string key1 = txt_3des_key1.Text;
+                string key2 = txt_3des_key2.Text;
+                string key3 = txt_3des_key3.Text;
+                string res = _3des.Mahoa3DES(cipher, key1, key2, key3);
+
+                txt_des_result.Text = res;
+            }
+        }
+
+        
     }
 } 
