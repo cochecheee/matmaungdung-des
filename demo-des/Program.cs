@@ -12,8 +12,8 @@
             // see https://aka.ms/applicationconfiguration.
             //hiển thị UI
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
-            //Application.Run(new testUI());
+            Application.Run(new TrangChu());
+        
         }
     }
 }
