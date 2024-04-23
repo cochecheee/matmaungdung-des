@@ -89,13 +89,13 @@ namespace demo_des
             }
             else
             {
-                string plain = txt_des_text.Text;
+                string plain = txt_3des_text.Text;
                 string key1 = txt_3des_key1.Text;
                 string key2 = txt_3des_key2.Text;
                 string key3 = txt_3des_key3.Text;
                 string res = _3des.Mahoa3DES(plain, key1, key2, key3);
 
-                txt_des_result.Text = res;
+                txt_3des_result.Text = res;
             }
         }
 
@@ -109,13 +109,13 @@ namespace demo_des
             }
             else
             {
-                string cipher = txt_des_text.Text;
+                string cipher = txt_3des_text.Text;
                 string key1 = txt_3des_key1.Text;
                 string key2 = txt_3des_key2.Text;
                 string key3 = txt_3des_key3.Text;
                 string res = _3des.Giaima3DES(cipher, key1, key2, key3);
 
-                txt_des_result.Text = res;
+                txt_3des_result.Text = res;
             }
         }
 
